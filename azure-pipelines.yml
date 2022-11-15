@@ -6,9 +6,6 @@
 name: Azure Static Web Apps CI/CD for Staging envs
 
 trigger:
-  - develop
-  - gamma
-  - theta
   - master
 
 pool:
@@ -24,6 +21,4 @@ steps:
       api_location: "api"
       verbose: true
       output_location: "build"
-      production_branch: "main"
-    env:
       azure_static_web_apps_api_token: $(deploymentToken)
