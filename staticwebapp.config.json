@@ -1,0 +1,4 @@
+{
+    "route": "/src/index.js",
+    "allowedRoles": ["anonymous"]
+}
