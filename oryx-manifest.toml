@@ -1,8 +1,0 @@
-NodeVersion="16.14.2"
-nodeBuildCommandsFile="/app/oryx-build-commands.txt"
-Frameworks="React"
-OutputDirPath="build"
-OperationId="|mDAdlmvzdGQ=.aba8a11f_"
-SourceDirectoryInBuildContainer="/app"
-PlatformName="nodejs"
-CompressDestinationDir="false"
