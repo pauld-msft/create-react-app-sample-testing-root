@@ -26,3 +26,5 @@ steps:
       azure_static_web_apps_api_token: $(deploymentToken)
     env:
       RUN_BUILD_COMMAND: "oryx build '/working_dir' --env CUSTOM_BUILD_COMMAND='whoami && pwd && ls -la && npm install --unsafe-perm' -o /ss-oryx/app --manifest-dir /ss-oryx/app-manifest -p require_build -p disable_recursive_lookup=true -p ORYX_APP_TYPE='static-sites' -p NODE_DEFAULT_VERSION=16 -p DOTNET_DEFAULT_VERSION=6 -p PYTHON_DEFAULT_VERSION=3.9"
+      CUSTOM_BUILD_COMMAND: 'whoami && pwd && ls -la && npm install --unsafe-perm'
+      
