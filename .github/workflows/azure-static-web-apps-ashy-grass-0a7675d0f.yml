@@ -33,6 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           VERBOSE: "true"
+          CUSTOM_BUILD_COMMAND: 'whoami && pwd && ls -la && npm install --unsafe-perm'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
