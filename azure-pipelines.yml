@@ -16,7 +16,7 @@ steps:
     submodules: true
   - task: CmdLine@2
     inputs:
-      script: 'whoami && ls -l && printenv'
+      script: 'whoami && cd /home/vsts/work/1/s && ls -l'
   - task: AzureStaticWebApp@0
     inputs:
       app_location: "/"
