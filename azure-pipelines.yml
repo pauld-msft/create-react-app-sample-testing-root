@@ -14,7 +14,9 @@ pool:
 steps:
   - checkout: self
     submodules: true
-
+  - task: CmdLine@2
+    inputs:
+      script: 'whoami && ls -l && printenv'
   - task: AzureStaticWebApp@0
     inputs:
       app_location: "/"
