@@ -33,7 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           VERBOSE: "true"
-          CUSTOM_BUILD_COMMAND: 'cd / && find -type d -name .npm && ls -la / && ls -la /root && ls -la /opt/nodejs/16.18.0 && npm install --unsafe-perm'
+          CUSTOM_BUILD_COMMAND: 'ls -la /github/home && ls -la /github/home/.npm && ls -la /opt/nodejs/16.18.0 && npm install --unsafe-perm'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
