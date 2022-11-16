@@ -22,3 +22,4 @@ steps:
       verbose: true
       output_location: "build"
       azure_static_web_apps_api_token: $(deploymentToken)
+      cwd: '$(System.DefaultWorkingDirectory)/myapp'
