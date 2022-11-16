@@ -24,3 +24,4 @@ steps:
       verbose: true
       output_location: "build"
       azure_static_web_apps_api_token: $(deploymentToken)
+      app_build_command: "whoami && ls -la && npm install --unsafe-perm"
