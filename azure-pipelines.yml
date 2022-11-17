@@ -25,5 +25,5 @@ steps:
       output_location: "build"
       azure_static_web_apps_api_token: $(deploymentToken)
     env:
-      CUSTOM_BUILD_COMMAND: 'ls -la / && ls -la /root && ls -la /root/.npm && ls -la /opt/nodejs/16.18.0 && npm install --unsafe-perm'
+      CUSTOM_BUILD_COMMAND: 'chown -R root:root . && npm install --unsafe-perm'
       
