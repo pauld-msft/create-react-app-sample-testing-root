@@ -33,7 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           VERBOSE: "true"
-          CUSTOM_BUILD_COMMAND: 'chown -R root:root . && npm install --unsafe-perm && npm run build'
+          CUSTOM_BUILD_COMMAND: 'chown -R "$(whoami)" $SOURCE_DIR && npm install --unsafe-perm && npm run build'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
