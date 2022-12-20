@@ -24,6 +24,6 @@ steps:
       verbose: true
       output_location: "build"
       azure_static_web_apps_api_token: $(deploymentToken)
-    env:
-      CUSTOM_BUILD_COMMAND: 'chown -R root:root . && npm install --unsafe-perm && npm run build'
+#    env:
+#      CUSTOM_BUILD_COMMAND: 'chown -R root:root . && npm install --unsafe-perm && npm run build'
       
